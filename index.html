@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravidez Precoce e Abandono Escolar</title>
+<meta name="description" content="Website educativo sobre prevenção da gravidez precoce e redução do abandono escolar.">
+<style>
+:root{--c1:#6d28d9;--c2:#db2777;--bg:#faf7ff;--tx:#241a35;--card:#fff;--soft:#f0e8ff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65}
+header{background:linear-gradient(120deg,var(--c1),var(--c2));color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0003}
+.bar{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem}
+.logo{font-weight:800;font-size:1.05rem}
+#tg{display:none;background:none;border:2px solid #fff;color:#fff;border-radius:8px;font-size:1.3rem;padding:.1rem .6rem;cursor:pointer}
+nav{display:flex;gap:.2rem;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:.4rem .7rem;border-radius:20px;font-size:.9rem}
+nav a:hover,nav a.on{background:#fff3}
+main{max-width:1000px;margin:auto;padding:1.2rem 1rem 3rem}
+.page{display:none;animation:f .4s}
+.page.on{display:block}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15}
+h2{color:var(--c1);margin:1.4rem 0 .6rem;font-size:1.5rem}
+h3{color:var(--c2);margin:1rem 0 .4rem}
+p{margin:.6rem 0}
+ul,ol{margin:.5rem 0 .5rem 1.3rem}
+li{margin:.3rem 0}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:center;padding:1rem 0}
+.hero p.lead{font-size:1.1rem;margin:1rem 0}
+.btn{display:inline-block;background:linear-gradient(120deg,var(--c1),var(--c2));color:#fff;text-decoration:none;padding:.7rem 1.4rem;border-radius:30px;font-weight:700;margin:.3rem .3rem .3rem 0}
+.btn.alt{background:#fff;color:var(--c1);border:2px solid var(--c1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1rem 0}
+.card{background:var(--card);border-radius:16px;padding:1.1rem;box-shadow:0 3px 14px #6d28d91a;border-top:4px solid var(--c2)}
+.card h3{margin-top:0}
+.quote{background:var(--soft);border-left:5px solid var(--c1);padding:1rem 1.2rem;border-radius:10px;font-style:italic;margin:1.2rem 0}
+.stat{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.stat span{background:var(--soft);padding:.5rem 1rem;border-radius:20px;font-weight:600;color:var(--c1)}
+.flow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;justify-content:center;margin:1rem 0}
+.flow div{background:var(--c1);color:#fff;padding:.6rem 1rem;border-radius:12px;font-weight:600;text-align:center}
+.flow div.r{background:var(--c2)}
+.flow b{font-size:1.4rem;color:var(--c2)}
+.note{background:#fff8e1;border:1px dashed #f59e0b;padding:.8rem 1rem;border-radius:10px;font-size:.92rem;margin:1rem 0}
+details{background:var(--card);border-radius:12px;padding:.8rem 1rem;margin:.6rem 0;box-shadow:0 2px 8px #0001}
+summary{cursor:pointer;font-weight:700;color:var(--c1)}
+footer{text-align:center;padding:1.5rem 1rem;background:#241a35;color:#e9ddff;font-size:.9rem}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.2rem 0}
+.gal figure{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 3px 14px #6d28d91a}
+.gal img{width:100%;height:190px;object-fit:cover;display:block;background:var(--soft)}
+.gal figcaption{padding:.6rem .9rem;font-size:.9rem}
+.gal .ph{height:190px;display:none;align-items:center;justify-content:center;background:var(--soft);color:var(--c1);font-weight:700;text-align:center;padding:1rem}
+.gal.p img{height:auto}
+.banner{width:100%;max-height:280px;object-fit:cover;border-radius:16px;margin:.8rem 0;display:block}
+@media(max-width:720px){
+#tg{display:block}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--c1);padding:.6rem;flex-direction:column}
+nav.open{display:flex}
+.hero{grid-template-columns:1fr}
+.flow b{transform:rotate(90deg)}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="bar">
+<span class="logo">🎓 Estudar é Futuro</span>
+<button id="tg" aria-label="Abrir menu">☰</button>
+<nav id="nav">
+<a href="#inicio">Início</a><a href="#introducao">Introdução</a><a href="#objectivos">Objectivos</a><a href="#desenvolvimento">Desenvolvimento</a><a href="#solucoes">Soluções</a><a href="#recomendacoes">Recomendações</a><a href="#conclusao">Conclusão</a><a href="#referencias">Referências</a><a href="#grupo">Grupo</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- INÍCIO -->
+<section class="page" id="inicio">
+<div class="hero">
+<div>
+<h1>Gravidez Precoce e Abandono Escolar</h1>
+<p class="lead">A gravidez não deve significar o fim dos sonhos nem das oportunidades de aprendizagem de qualquer jovem. Neste website, o nosso grupo apresenta as causas, as consequências e, sobretudo, <b>soluções</b> para prevenir a gravidez precoce e reduzir o abandono escolar.</p>
+<a class="btn" href="#desenvolvimento">Ler o trabalho</a><a class="btn alt" href="#solucoes">Ver soluções</a>
+</div>
+<svg viewBox="0 0 320 280" role="img" aria-label="Ilustração: livro aberto, estudante e coração">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs>
+<circle cx="160" cy="140" r="130" fill="#f0e8ff"/>
+<path d="M60 190 L160 170 L260 190 L260 110 L160 90 L60 110Z" fill="url(#g)"/>
+<path d="M160 90 L160 170" stroke="#fff" stroke-width="4"/>
+<path d="M80 120 L145 106M80 135 L145 121M80 150 L145 136M175 106 L240 120M175 121 L240 135M175 136 L240 150" stroke="#fff" stroke-width="3" opacity=".7"/>
+<circle cx="160" cy="55" r="22" fill="#fbbf24"/>
+<path d="M120 90 Q160 60 200 90" fill="#6d28d9"/>
+<path d="M160 235 C120 205 110 180 135 178 C150 177 160 190 160 190 C160 190 170 177 185 178 C210 180 200 205 160 235Z" fill="#db2777"/>
+<text x="160" y="268" text-anchor="middle" font-size="15" font-weight="700" fill="#6d28d9">Educação • Apoio • Futuro</text>
+</svg>
+</div>
+<div class="grid">
+<div class="card"><h3>📖 Informação</h3><p>Conhecimento correcto sobre saúde sexual e reprodutiva protege os adolescentes.</p></div>
+<div class="card"><h3>🤝 Apoio</h3><p>Família, escola e comunidade devem acolher, sem humilhar nem discriminar.</p></div>
+<div class="card"><h3>🚀 Continuidade</h3><p>Com condições adequadas, as jovens mães podem continuar os estudos.</p></div>
+</div>
+<h2>Cartaz da campanha</h2>
+<img src="imagens/cartaz.jpg" alt="Cartaz: Gravidez precoce e abandono escolar. Sonhos não devem ser interrompidos." style="display:block;margin:1rem auto;max-width:min(100%,420px);border-radius:16px;box-shadow:0 4px 18px #0003">
+<h2>Os nossos sonhos</h2>
+<div class="gal p">
+<figure><img src="imagens/sonho1.jpg" alt="Estudante com mensagem sobre a prevenção das uniões prematuras" loading="lazy"></figure>
+<figure><img src="imagens/sonho2.jpg" alt="Estudante com mensagem sobre a prevenção das gravidezes precoces" loading="lazy"></figure>
+<figure><img src="imagens/sonho3.jpg" alt="Estudante com a mensagem: vou lutar para que esses sonhos se tornem realidade" loading="lazy"><figcaption>Educação e esperança: lutar para realizar os sonhos.</figcaption></figure>
+</div>
+<div class="quote">“A gravidez precoce não deve significar o fim dos estudos nem dos sonhos de uma jovem.”</div>
+</section>
+
+<!-- INTRODUÇÃO -->
+<section class="page" id="introducao">
+<h2>Introdução</h2>
+<p>O nosso grupo escolheu o tema “Gravidez Precoce e Abandono Escolar” porque temos presenciado situações de colegas que desistiram da escola devido à gravidez precoce. Esta realidade despertou em nós a preocupação com o futuro dos adolescentes e com as dificuldades que enfrentam para continuar os estudos e alcançar os seus objectivos.</p>
+<p>A gravidez precoce constitui um desafio social que pode trazer novas responsabilidades e dificuldades para os adolescentes, sobretudo quando não existe apoio familiar, escolar e comunitário. Em alguns casos, essas dificuldades contribuem para a interrupção dos estudos, comprometendo as oportunidades de formação académica e profissional dos jovens.</p>
+<p>Por sua vez, o abandono escolar pode limitar as oportunidades de acesso à educação e ao emprego, dificultando a concretização dos projectos de vida dos adolescentes. Por isso, consideramos importante compreender as causas e as consequências destes problemas, bem como identificar medidas que contribuam para a sua prevenção.</p>
+<p>Deste modo, o presente trabalho tem como finalidade sensibilizar a comunidade escolar para a prevenção da gravidez precoce e a redução do abandono escolar, procurando encontrar soluções possíveis que ajudem os nossos colegas a tomar decisões responsáveis e a valorizar a educação.</p>
+<h3>Porque escolhemos este tema</h3>
+<p>Escolhemos este tema porque temos visto colegas abandonarem a escola. O nosso principal propósito é apresentar soluções possíveis que ajudem os nossos colegas a prevenir a gravidez precoce, a tomar decisões responsáveis e a valorizar a educação, defendendo que a gravidez não deve significar o fim dos sonhos nem das oportunidades de aprendizagem de qualquer jovem.</p>
+</section>
+
+<!-- OBJECTIVOS -->
+<section class="page" id="objectivos">
+<h2>Objectivos</h2>
+<div class="card"><h3>Objectivo geral</h3><p>Identificar possíveis soluções para prevenir a gravidez precoce e reduzir o abandono escolar, sensibilizando os adolescentes para a importância da prevenção, da educação e da construção de um futuro melhor.</p></div>
+<h3>Objectivos específicos</h3>
+<ul>
+<li>Identificar as principais causas da gravidez precoce entre os adolescentes.</li>
+<li>Compreender as consequências da gravidez precoce na vida pessoal, familiar e académica dos jovens.</li>
+<li>Analisar a relação entre a gravidez precoce e o abandono escolar, tendo em conta as situações observadas no nosso meio escolar.</li>
+<li>Sensibilizar os nossos colegas sobre a importância de tomar decisões responsáveis e de procurar informações correctas sobre a saúde sexual e reprodutiva.</li>
+<li>Propor medidas de prevenção da gravidez precoce, através da educação, do diálogo familiar e do acesso a informações adequadas.</li>
+<li>Encontrar soluções que ajudem os adolescentes a evitar a gravidez precoce e a continuar os seus estudos.</li>
+<li>Incentivar a escola, as famílias e a comunidade a apoiarem as estudantes grávidas e as mães adolescentes, para que possam prosseguir a sua formação académica.</li>
+<li>Contribuir para a redução do abandono escolar e para a criação de um ambiente escolar mais inclusivo, respeitador e favorável à aprendizagem.</li>
+</ul>
+</section>
+
+<!-- DESENVOLVIMENTO -->
+<section class="page" id="desenvolvimento">
+<h2>Desenvolvimento</h2>
+
+<h3>1. Conceitos</h3>
+<p><b>Gravidez precoce</b> é aquela que ocorre durante a adolescência, numa fase em que os jovens ainda se encontram em processo de desenvolvimento físico, emocional e social. Pode trazer novas responsabilidades e desafios, especialmente quando a adolescente não dispõe de informação adequada e de apoio familiar e social.</p>
+<p><b>Abandono escolar</b> consiste na interrupção dos estudos antes da conclusão do nível de ensino que o aluno pretendia alcançar. Pode ocorrer por dificuldades económicas, problemas familiares, gravidez precoce e falta de apoio para continuar a estudar.</p>
+
+<h3>2. Principais causas da gravidez precoce</h3>
+<div class="grid">
+<div class="card"><h3>Falta de informação</h3><p>Alguns adolescentes não têm conhecimentos suficientes sobre saúde sexual e reprodutiva e prevenção da gravidez.</p></div>
+<div class="card"><h3>Pressão social e dos parceiros</h3><p>Alguns jovens sentem-se pressionados a iniciar relações sexuais sem estarem preparados.</p></div>
+<div class="card"><h3>Pouco diálogo familiar</h3><p>A falta de conversa entre pais e filhos dificulta o esclarecimento de dúvidas e a procura de orientação.</p></div>
+<div class="card"><h3>Condições económicas</h3><p>A pobreza e a dependência financeira aumentam a vulnerabilidade de alguns adolescentes.</p></div>
+<div class="card"><h3>Violência e abuso sexual</h3><p>Podem resultar em gravidez e exigem protecção e apoio adequados.</p></div>
+</div>
+
+<h3>3. Consequências da gravidez precoce</h3>
+<ul>
+<li><b>Escolar:</b> dificuldades para frequentar as aulas, realizar trabalhos e preparar-se para os exames, devido às consultas, às responsabilidades familiares e aos cuidados com o bebé.</li>
+<li><b>Social e emocional:</b> discriminação, críticas, isolamento e preocupações com o futuro.</li>
+<li><b>Saúde:</b> exige acompanhamento adequado, pois pode apresentar riscos que devem ser avaliados por profissionais de saúde.</li>
+</ul>
+<p>Contudo, nem todas as adolescentes grávidas terão os mesmos problemas. Com acompanhamento de saúde e apoio familiar e escolar, é possível reduzir obstáculos e favorecer a continuidade dos estudos.</p>
+
+<h3>4. Relação entre gravidez precoce e abandono escolar</h3>
+<img class="banner" src="imagens/escola.jpg" alt="Imagem ilustrativa: estudante com livros à porta da escola" loading="lazy">
+<p style="font-size:.85rem;text-align:center;margin-top:-.3rem"><i>Imagem ilustrativa.</i></p>
+<div class="flow"><div>Gravidez precoce</div><b>→</b><div>Falta de apoio, preconceito, falta de recursos</div><b>→</b><div class="r">Abandono escolar</div></div>
+<p>A gravidez precoce pode contribuir para o abandono escolar quando a adolescente tem dificuldade em conciliar os estudos com a gravidez e, depois, com os cuidados da criança. A falta de recursos financeiros, o preconceito, a ausência de apoio familiar e as dificuldades de acesso à escola agravam a situação.</p>
+<p>Em alguns casos, a estudante sente-se obrigada a parar para cuidar do bebé ou ajudar nas despesas. Noutros, afasta-se da escola por medo de críticas ou por não encontrar condições para continuar a frequentar as aulas.</p>
+<div class="quote">O abandono escolar não é uma consequência inevitável da gravidez.</div>
+
+<h3>5. Consequências do abandono escolar</h3>
+<p>O abandono escolar limita as oportunidades de formação e de acesso ao emprego, dificulta a aquisição de conhecimentos e competências necessários para a autonomia financeira e para a participação activa na sociedade, e torna mais difícil concretizar os projectos de vida. Por isso, prevenir o abandono escolar é importante para o desenvolvimento individual, familiar e social.</p>
+
+<h3>6. O papel da família, da escola e da comunidade</h3>
+<div class="grid">
+<div class="card"><h3>🏠 Família</h3><p>Orientar os adolescentes, promover o diálogo e oferecer apoio perante as dificuldades.</p></div>
+<div class="card"><h3>🏫 Escola</h3><p>Fazer educação preventiva, identificar situações de vulnerabilidade e incentivar a continuidade dos estudos.</p></div>
+<div class="card"><h3>🏥 Comunidade e saúde</h3><p>Fornecer informação, aconselhamento e apoio aos adolescentes.</p></div>
+</div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section class="page" id="solucoes">
+<h2>Soluções e medidas de prevenção</h2>
+<h3>Medidas para prevenir a gravidez precoce</h3>
+<ul>
+<li>Promover a educação sobre saúde sexual e reprodutiva, com informações correctas e adequadas à idade.</li>
+<li>Incentivar o diálogo entre pais, encarregados de educação e adolescentes.</li>
+<li>Facilitar o acesso dos jovens a serviços de saúde e a aconselhamento confidencial e apropriado.</li>
+<li>Ensinar os adolescentes a reconhecer situações de pressão, violência e abuso e a procurar ajuda.</li>
+<li>Sensibilizar a comunidade escolar sobre a importância da prevenção e da tomada de decisões responsáveis.</li>
+<li>Combater o casamento prematuro, a violência sexual e outras práticas que colocam os adolescentes em risco.</li>
+</ul>
+<h3>Medidas para reduzir o abandono escolar</h3>
+<ul>
+<li>Criar programas de sensibilização nas escolas sobre a gravidez precoce e as suas consequências.</li>
+<li>Reforçar o acompanhamento dos alunos por professores, orientadores e profissionais de saúde.</li>
+<li>Incentivar as famílias a apoiar os adolescentes e a procurar soluções em conjunto com a escola.</li>
+<li>Promover um ambiente escolar livre de discriminação e humilhação.</li>
+<li>Facilitar a continuidade dos estudos das estudantes grávidas e das mães adolescentes, de acordo com as suas necessidades.</li>
+<li>Desenvolver iniciativas de apoio escolar, como grupos de estudo, acompanhamento pedagógico e orientação.</li>
+<li>Divulgar informações sobre os serviços de saúde e as instituições que prestam apoio aos adolescentes.</li>
+</ul>
+<div class="note"><b>Precisas de ajuda?</b> Fala com um professor, um familiar de confiança ou procura a unidade sanitária mais próxima. Se sofreste pressão ou violência, não estás sozinha: pede ajuda a um adulto de confiança.</div>
+</section>
+
+<!-- RECOMENDAÇÕES -->
+<section class="page" id="recomendacoes">
+<h2>Recomendações</h2>
+<details open><summary>Aos alunos</summary><p>Procurem informações correctas sobre a saúde sexual e reprodutiva, tomem decisões responsáveis e evitem situações de pressão ou violência.</p></details>
+<details><summary>Aos encarregados de educação</summary><p>Mantenham um diálogo aberto com os filhos, oferecendo orientação, carinho e apoio, sem recorrer à humilhação ou à discriminação.</p></details>
+<details><summary>Aos professores e à direcção da escola</summary><p>Promovam palestras e campanhas de sensibilização sobre a prevenção da gravidez precoce e a importância da continuidade dos estudos. Combatam a discriminação contra as alunas grávidas e as mães jovens, criando condições para que continuem a aprender num ambiente seguro e acolhedor.</p></details>
+<details><summary>À comunidade</summary><p>Colabore na divulgação de informações correctas e na protecção dos adolescentes contra a violência, o abuso e o casamento prematuro.</p></details>
+<details><summary>Às unidades sanitárias</summary><p>Disponibilizem informações e serviços de saúde sexual e reprodutiva adequados aos adolescentes, respeitando a sua dignidade e privacidade.</p></details>
+<details><summary>Às adolescentes grávidas e mães jovens</summary><p>Devem receber apoio familiar, escolar e comunitário para continuar os estudos e alcançar os seus objectivos.</p></details>
+<details><summary>Ao Governo e às organizações sociais</summary><p>Reforcem os programas de educação, prevenção da violência e apoio aos adolescentes em situação de vulnerabilidade.</p></details>
+</section>
+
+<!-- CONCLUSÃO -->
+<section class="page" id="conclusao">
+<h2>Conclusão</h2>
+<p>Com a realização deste trabalho sobre “Gravidez Precoce e Abandono Escolar”, compreendemos que estes problemas representam desafios importantes para os adolescentes, as famílias, as escolas e a sociedade em geral.</p>
+<p>Verificámos que a gravidez precoce pode dificultar a continuidade dos estudos, principalmente quando as adolescentes não recebem o apoio necessário. Entre as principais dificuldades encontram-se as responsabilidades de cuidar de um bebé, as dificuldades financeiras, a discriminação e a falta de apoio familiar e escolar.</p>
+<p>Concluímos também que o abandono escolar não deve ser considerado uma consequência inevitável da gravidez. Com o apoio da família, da escola, das unidades sanitárias e da comunidade, as adolescentes grávidas e as mães jovens podem continuar os estudos e lutar pelos seus sonhos.</p>
+<p>Por isso, é fundamental investir na educação, na prevenção da gravidez precoce, no diálogo familiar e na criação de oportunidades para todos os adolescentes.</p>
+<div class="quote">Prevenir a gravidez precoce e reduzir o abandono escolar são responsabilidades de todos. Todos merecem a oportunidade de aprender e construir um futuro melhor.</div>
+</section>
+
+<!-- REFERÊNCIAS -->
+<section class="page" id="referencias">
+<h2>Referências bibliográficas</h2>
+<div class="note">⚠️ Grupo: substituam/completem esta lista com os livros, artigos e documentos que realmente consultaram (autor, título, ano, editora ou link, data de consulta).</div>
+<ul>
+<li>ORGANIZAÇÃO MUNDIAL DA SAÚDE (OMS). <i>Adolescent pregnancy</i> (ficha informativa). www.who.int</li>
+<li>UNFPA. Saúde sexual e reprodutiva de adolescentes e jovens. www.unfpa.org</li>
+<li>UNICEF Moçambique. Adolescentes, educação e protecção. www.unicef.org/mozambique</li>
+<li>[Livro/manual escolar consultado — autor, título, ano, editora]</li>
+<li>[Outra fonte — autor, título, ano ou link]</li>
+</ul>
+<h3>Créditos das fotografias</h3>
+<ul>
+<li>Cartaz e imagem ilustrativa da escola: [indicar a origem ou a ferramenta usada].</li>
+<li>Fotografias das estudantes: [autoria] e [autorização da pessoa fotografada].</li>
+</ul>
+</section>
+
+<!-- GRUPO -->
+<section class="page" id="grupo">
+<h2>Elementos do grupo</h2>
+<div class="grid">
+<div class="card"><h3>Escola</h3><p>[Nome da escola]</p></div>
+<div class="card"><h3>Turma / Classe</h3><p>[ex.: 12.ª classe, turma A02]</p></div>
+<div class="card"><h3>Professor(a)</h3><p>[Nome do professor(a)]</p></div>
+</div>
+<h3>Membros</h3>
+<ol><li>[Nome completo]</li><li>[Nome completo]</li><li>[Nome completo]</li><li>[Nome completo]</li></ol>
+<p style="font-size:.9rem">Nota: este website não publica nomes, fotografias ou dados pessoais de pessoas envolvidas em situações sensíveis.</p>
+</section>
+
+</main>
+<footer>© 2026 • Trabalho escolar: Gravidez Precoce e Abandono Escolar • Educação é o caminho para um futuro melhor</footer>
+
+<script>
+(function(){
+var pages=[].slice.call(document.querySelectorAll('.page')),links=[].slice.call(document.querySelectorAll('nav a')),nav=document.getElementById('nav');
+function show(){
+var id=(location.hash||'#inicio').slice(1);
+if(!document.getElementById(id))id='inicio';
+pages.forEach(function(p){p.classList.toggle('on',p.id===id)});
+links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
+nav.classList.remove('open');
+window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',show);
+document.getElementById('tg').addEventListener('click',function(){nav.classList.toggle('open')});
+show();
+})();
+</script>
+<noscript><style>.page{display:block!important}</style></noscript>
+</body>
+</html>
